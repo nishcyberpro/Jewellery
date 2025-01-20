@@ -1,15 +1,18 @@
 import React from "react";
+type Product = {
+  id: number;
+  name: string;
+  image: string;
+  tag: string;
+  price: string;
+  rating: number;
+};
+interface NewArrivalProps {
+  title: string;
+  products: Product[];
+}
 
-const NewArrival = ({ title, Products }) => {
-  type Product = {
-    id: number;
-    name: string;
-    image: string;
-    tag: string;
-    price: string;
-    rating: number;
-  };
-
+const NewArrival: React.FC<NewArrivalProps> = ({ title, products }) => {
   return (
     <div className=" flex w-screen bg-white flex-col justify-center items-center p-4">
       <div className="eighty bg-white w-screen px-4 lg:w-4/5 md:w-screen md:px-4 h-[50px] flex flex-row justify-between items-center border-b-2   ">
