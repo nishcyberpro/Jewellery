@@ -81,7 +81,10 @@ const NewArrival = () => {
               </span>
             </div>
             <div className="image flex justify-center items-center">
-              <img src={product.image} className="w-4/5" />
+              <img
+                src={product.image}
+                className="w-4/5 hover:scale-125 hover:cursor-pointer transform transition-all duration-500"
+              />
             </div>
             <div className="title font-sans text-[18px] text-gray-600">
               {product.name}
@@ -105,7 +108,7 @@ const NewArrival = () => {
               </div>
             </div>
             <div className="addtocart flex justify-center items-center w-full mt-2">
-              <button className="bg-[#DDAC10] text-white py-2 px-4 rounded w-[90%]">
+              <button className="bg-[#DDAC10] text-white py-2 px-4 rounded w-[90%] text-sm  lg:text-lg hover:bg-black hover:text-white cursor-pointer">
                 Add to Cart
               </button>
             </div>
