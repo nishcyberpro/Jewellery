@@ -50,10 +50,10 @@ export default function Home() {
   return (
     <div>
       <Slider />
-      <NewArrival title="NEW ARRIVAL" Products={Products} />
+      <NewArrival title="NEW ARRIVAL" products={Products} />
 
       <SingleImage />
-      <NewArrival title="POPULAR" Products={Products} />
+      <NewArrival title="POPULAR" products={Products} />
       <ProductCategory />
     </div>
   );

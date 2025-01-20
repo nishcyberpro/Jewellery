@@ -33,7 +33,7 @@ const NewArrival: React.FC<NewArrivalProps> = ({ title, products }) => {
       </div>
       {/* div for products */}
       <div className="eighty bg-white grid px-2 md:px-4 lg:px-0 w-screen md:w-full lg:w-4/5 grid-cols-2 md:grid-cols-3  lg:grid-cols-5  gap-4  mt-4 ">
-        {Products.map((product: Product) => (
+        {products.map((product: Product) => (
           <div className="singleproduct rounded-lg  border-2 px-4 py-4">
             <div
               className="w-3/5 h-[50px]  bg-center bg-contain bg-no-repeat  relative pb-4 flex justify-center items-center"
